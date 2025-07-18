@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Access Denied – Sorry, you have been blocked</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset & base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333; }
+
+    /* Centered container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Main heading */
+    .container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #d9534f;
+    }
+
+    /* Subheading */
+    .container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Paragraphs */
+    .container p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+      max-width: 400px;
+    }
+
+    /* Retry button */
+    .container a.retry-btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      background-color: #0275d8;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.2s ease-in-out;
+    }
+    .container a.retry-btn:hover {
+      background-color: #025aa5;
+    }
+
+    /* Debug info */
+    .container .info {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .container ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+      margin: 0 auto 1rem;
+    }
+    .container ul li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sorry, you have been blocked</h1>
+    <h2>Access Denied</h2>
+    <p>Your request could not pass our security checks.</p>
+    <p>If you believe this is an error, you can try:</p>
+    <ul>
+      <li>• Clearing your browser’s cache and cookies</li>
+      <li>• Disabling any VPN or proxy</li>
+      <li>• Contacting the site administrator for assistance</li>
+    </ul>
+    <a href="/" class="retry-btn">Go Back / Retry</a>
+<!--     <div class="info">
+      <p>Ray ID: <em>{{RayID}}</em></p>
+      <p>Timestamp: <em>{{Timestamp}}</em></p>
+      <p>Your IP: <em>{{ClientIP}}</em></p>
+    </div> -->
+  </div>
+</body>
+</html>
